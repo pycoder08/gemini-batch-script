@@ -1,8 +1,8 @@
 steps:
-  - name: 'docker build'
+  - name: 'gcr.io/cloud-builders/docker'
     id: build-image
     args: ['build', '-t', 'europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest', '.']
-  - name: 'docker push'
+  - name: 'gcr.io/cloud-builders/docker'
     id: push-image
     args: ['push', 'europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest']
 images: ['europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest']
