@@ -6,3 +6,5 @@ steps:
     id: push-image
     args: ['push', 'europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest']
 images: ['europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest']
+options:
+  logsBucket: 'gs://logs-bucket-myc'
