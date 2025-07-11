@@ -7,4 +7,5 @@ steps:
     args: ['push', 'europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest']
 images: ['europe-west1-docker.pkg.dev/taybadocs/cloud-run-source-deploy/transcription-service:latest']
 options:
-  logsBucket: 'gs://logs-bucket-myc'
+  logging: GCS_ONLY
+logsBucket: 'gs://logs-bucket-myc'
